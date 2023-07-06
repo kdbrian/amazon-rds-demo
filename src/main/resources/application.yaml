@@ -3,10 +3,13 @@ spring:
     port: 9090
 
   datasource:
-    url: jdbc:mysql://database-1.ccdwitjkt0qb.eu-north-1.rds.amazonaws.com:3306/database-1?useSSL=false
+    url: jdbc:mysql://spring-rds.ccdwitjkt0qb.eu-north-1.rds.amazonaws.com:3306/
     username: junrdev
     password: junrdev2022
 
     jpa:
       database-platform: org.hibernate.dialect.MySQL5Dialect
 
+    ddl-auto: update
+
+#/spring-rds?useSSL=false
