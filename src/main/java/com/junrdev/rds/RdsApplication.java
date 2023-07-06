@@ -8,21 +8,21 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RdsApplication implements CommandLineRunner {
+public class RdsApplication {
 
-	@Autowired
-	private TodoRepository repository;
+//	@Autowired
+//	private TodoRepository repository;
 
 
 	public static void main(String[] args) {
 		SpringApplication.run(RdsApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		repository.save(new Todo("todo1", "demo todo 1"));
-		repository.save(new Todo("todo2", "demo todo 2"));
-		repository.save(new Todo("todo3", "demo todo 3"));
-		repository.save(new Todo("todo4", "demo todo 4"));
-	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//		repository.save(new Todo(1L,"todo1", "demo todo 1"));
+//		repository.save(new Todo(2L, "todo2", "demo todo 2"));
+//		repository.save(new Todo(3L, "todo3", "demo todo 3"));
+//		repository.save(new Todo(4L, "todo4", "demo todo 4"));
+//	}
 }
