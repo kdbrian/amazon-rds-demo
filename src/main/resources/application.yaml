@@ -1,0 +1,12 @@
+spring:
+  server:
+    port: 9090
+
+  datasource:
+    url: jdbc:mysql://database-1.ccdwitjkt0qb.eu-north-1.rds.amazonaws.com:3306/database-1?useSSL=false
+    username: junrdev
+    password: junrdev2022
+
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+
