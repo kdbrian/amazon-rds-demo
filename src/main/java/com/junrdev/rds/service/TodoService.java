@@ -3,9 +3,11 @@ package com.junrdev.rds.service;
 import com.junrdev.rds.model.Todo;
 import com.junrdev.rds.repo.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TodoService {
 
 
