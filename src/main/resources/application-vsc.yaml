@@ -1,0 +1,19 @@
+spring:
+  server:
+    port: 9090
+
+  profiles:
+    active: development
+
+  datasource:
+    url: jdbc:mysql://<aws end point>:<port>/
+    username: <username>
+    password: <password>
+
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+
+    ddl-auto: update
+
+
+# i use this to hide my configuration details
