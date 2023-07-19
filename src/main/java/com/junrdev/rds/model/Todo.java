@@ -1,9 +1,18 @@
 package com.junrdev.rds.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(schema = "spring-rds")
+@Table
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+//@Data
 public class Todo {
 
     @SequenceGenerator( allocationSize = 1, sequenceName = "todo_seq", name = "todo_seq")
